@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House Design</title>
+
+<style>
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f5f5;
+    margin:0;
+    padding:50px 20px;
+}
+
+.container{
+    max-width:750px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    gap:20px;
+}
+
+a.button{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    background:#0B5ED7;
+    color:white;
+    padding:18px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+a.button:hover{
+    background:#094db3;
+}
+
+details{
+    margin-top:40px;
+}
+
+summary{
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.section-title{
+    margin:25px 0 12px;
+    font-weight:bold;
+    color:#333;
+}
+
+.small{
+    display:grid;
+    gap:12px;
+}
+
+.small a{
+    display:block;
+    text-align:center;
+    padding:14px;
+    background:white;
+    color:#333;
+    text-decoration:none;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.small a:hover{
+    background:#eee;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>House Design / घर का डिज़ाइन</h1>
+
+<div class="grid">
+
+<a class="button" href="ground_with_roof/">
+Current House<br>
+मौजूदा घर
+</a>
+
+<a class="button" href="top_with_roof/">
+New House Design<br>
+नया घर
+</a>
+
+<a class="button" href="top_and_ground_without_roof/">
+Both Floors (No Roof)<br>
+दोनों मंज़िल (बिना छत)
+</a>
+
+</div>
+
+<details>
+
+<summary>More Views / अन्य दृश्य</summary>
+
+<div class="section-title">
+Transparent View / अंदर दिखाई देगा
+</div>
+
+<div class="small">
+
+<a href="top_floor_without_roof/">
+New House (No Roof)<br>
+नया घर (बिना छत)
+</a>
+
+<a href="ground_floor_without_roof/">
+Current House (No Roof)<br>
+मौजूदा घर (बिना छत)
+</a>
+
+
+</div>
+
+<div class="section-title">
+Normal View / सामान्य दृश्य
+</div>
+
+<div class="small">
+
+<a href="ground_opaque_with_roof/">
+Current House<br>
+मौजूदा घर
+</a>
+
+<a href="bottom_opaque_without_roof/">
+Current House (No Roof)<br>
+मौजूदा घर (बिना छत)
+</a>
+
+<a href="top_opaque_with_roof/">
+New House<br>
+नया घर
+</a>
+
+<a href="top_opaque_without_roof/">
+New House (No Roof)<br>
+नया घर (बिना छत)
+</a>
+
+</div>
+
+</details>
+
+</div>
+
+</body>
+</html>
