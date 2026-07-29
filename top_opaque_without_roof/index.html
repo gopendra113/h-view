@@ -49,7 +49,9 @@
        http://sweethome3d.cvs.sf.net/viewvc/sweethome3d/SweetHome3D/src/com/eteks/sweethome3d/viewcontroller/resources/help/en/editing3DView.html 
        You may also switch between aerial view and virtual visit with the space bar -->
   <!-- For browser compatibility, see http://caniuse.com/webgl -->
-  <button onclick='viewHomeInOverlay("top_opaque_without_roof.zip", 
+    <script>
+window.addEventListener("load", function () {
+  viewHomeInOverlay("top_opaque_without_roof.zip", 
               {roundsPerMinute:    1,                              /* Rotation speed of the animation launched once home is loaded in rounds per minute, no animation if missing */ 
                widthByHeightRatio: 4/3,                            /* Size ratio of the displayed canvas */
                navigationPanel: "none",                            /* Displayed navigation arrows, "none" or "default" for default one or an HTML string containing elements with data-simulated-key 
@@ -65,7 +67,9 @@
                readingHomeText: "Reading",                         /* Comment displayed while reading home */
                readingModelText: "Model",                          /* Comment displayed while reading models */
                noWebGLSupportError: "No WebGL support"             /* Error message displayed if the browser do not support WebGL */
-              })'>View home</button>
+              })
+                            });
+</script>
 </div>
 
 <div style="position: absolute; bottom: 5px; text-align: center; width: 95%; z-index: -1">
